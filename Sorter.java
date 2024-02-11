@@ -16,7 +16,8 @@ public class Sorter {
             array[minIndex] = array[i];
             array[i] = temp;
         }
-        public static void insertionSort(int[] array) {
+    }
+        public static void insertionSort ( int[] array){
             int n = array.length;
             for (int i = 1; i < n; i++) {
                 int key = array[i];
@@ -28,12 +29,12 @@ public class Sorter {
                 array[j + 1] = key;
             }
         }
-        public static void sort(int[] array) {
-            insertionSort(array); // Call insertionSort method
-        }
-    }
     public static void sort(int[] array) {
-        selectionSort(array); // Call insertionSort method
+        insertionSort(array); // Call insertionSort method
+    }
+    public static void sortWithSelection(int[] array) {
+        selectionSort(array); // Call selectionSort method
     }
 }
+
 
